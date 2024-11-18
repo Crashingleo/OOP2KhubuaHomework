@@ -1,13 +1,14 @@
-public class Car {
+public class Car extends Engine{
 
-    public String modelName;
-    public int wheelsCount;
+    private static final int WheelsCount = 4;
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Car(String modelName, int wheelsCount) {
+        super(modelName, WheelsCount);
     }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+    @Override
+    public void service(){
+        super.service();
+
     }
 }
