@@ -1,9 +1,10 @@
-public class Bicycle {
+public class Bicycle extends vehicle{
 
-    public String modelName;
-    public int wheelsCount;
+    private static final int WheelsCount = 2;
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Bicycle(String modelName) {
+        super(modelName, WheelsCount);
     }
+
+
 }
